@@ -1,0 +1,2 @@
+class UtilityPhoto < ApplicationRecord
+end

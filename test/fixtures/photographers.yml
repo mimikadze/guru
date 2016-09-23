@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  moto: MyText
+  phone: MyString
+  instagramm: MyString
+  is_videograph: false
+  promotional_text: MyText
+
+two:
+  name: MyString
+  moto: MyText
+  phone: MyString
+  instagramm: MyString
+  is_videograph: false
+  promotional_text: MyText
