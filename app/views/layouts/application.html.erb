@@ -2,12 +2,8 @@
 <html class="modernizr_no-js" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Guru</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
-    <meta name="author" content="Иван Попов">
+    <title>Guru Wedding</title>
+    <meta name="author" content="Velichko Konstantin">
     <meta name="description" content="The template for quick start of development with Gulp, Jade and Stylus">
     <meta name="keywords" content="demo, gulp, bem, modules, sprites, svg, jade, stylus, boilerplate, frontend, project, template">
     <meta name="format-detection" content="telephone=no">
@@ -15,102 +11,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="true">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <meta property="og:title" content="Main">
     <meta property="og:url" content="http://zoxon.github.io/gulp-front/">
     <meta property="og:description" content="The template for quick start of development with Gulp, Jade and Stylus">
-    <meta property="og:image" content="<%= image_path 'content/preview.png' %>">
+    <meta property="og:image" content="assets/images/content/preview.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width">
     <meta property="og:image:height" content="300">
     <meta property="twitter:description" content="The template for quick start of development with Gulp, Jade and Stylus">
-
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-    <link href="<%= image_path "favicons/apple-touch-icon.png"%>" rel="apple-touch-icon" sizes="180x180">
-    <link type="image/png" href="<%= image_path "favicons/favicon-32x32.png"%>" rel="icon" sizes="32x32">
-    <link type="image/png" href="<%= image_path "favicons/favicon-16x16.png"%>" rel="icon" sizes="16x16">
-    <link href="<%= image_path "favicons/safari-pinned-tab.svg"%>" rel="mask-icon" color="#191919">
+    <link href="assets/images/content/preview.png" rel="image_src">
+    <link href="assets/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link type="image/png" href="assets/favicons/favicon-32x32.png" rel="icon" sizes="32x32">
+    <link type="image/png" href="assets/favicons/favicon-16x16.png" rel="icon" sizes="16x16">
+    <link href="assets/favicons/manifest.json" rel="manifest">
+    <link href="assets/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#191919">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-   
-  </head>
-  <style>
-    body {
-      background: #fff;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
     
-    .page-list {
-      padding: 40px 55px;
-      max-width: 700px;
-    }
-    
-    .page-list ul {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .page-list__title {
-      font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-      font-size: 30px;
-      font-weight: normal;
-      margin: 0;
-      padding-bottom: 20px;
-    }
-    
-    .page-list__item {
-      font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-      list-style: none;
-      padding: 0 0 10px 0;
-      font-size: 14px;
-    }
-    
-    .page-list__link,
-    .page-list__link:visited {
-      display: inline-block;
-      color: #290656;
-      text-decoration: underline;
-    }
-    
-    .page-list__link:hover {
-      text-decoration: none;
-      color: #374ec5;
-    }
-    
-    .page-list__spacer,
-    .page-list__file-name {
-      display: inline-block;
-      color: #808080;
-      font-size: 12px;
-      font-family: Georgia, "Century Schoolbook L", Serif;
-      font-style: italic;
-      padding-left: 10px;
-      margin: 0;
-    }
-    
-    @media screen and (max-width: 640px) {
-      .page-list {
-        padding: 20px;
-      }
-      .page-list__item {
-        display: block;
-        padding: 0;
-      }
-      .page-list__spacer,
-      .page-list__file-name {
-        display: none;
-      }
-      .page-list__link,
-      .page-list__link:visited {
-        display: block;
-        padding: 10px;
-      }
-    }
-  </style>
 
   <body class="page">
     <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
+  <%= javascript_include_tag 'application'%>
 </html>

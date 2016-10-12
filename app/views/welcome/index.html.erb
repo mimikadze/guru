@@ -1,132 +1,197 @@
-<!--[if lt IE 8]>
-    <p class="browsehappy">Вы используете<strong>устаревший</strong> браузер. Пожалуйста<a href="http://browsehappy.com" target="_blank">обновите браузер</a> для лучшего отображения сайта.</p><![endif]-->
-    <%= render template: 'shared/menu' %>
-    <div class="page__content">
-      <div class="page__wrapper">
-        <div class="page__header">
-          <header class="header">
-            <div class="header__top">
-              <div class="header__inner">
-                <div class="header__logo">
-                  <a class="logo" href="index.html">
-                    <img class="logo__normal" src="<%= image_path 'logo.svg' %>" alt="logo">
-                    <img class="logo__black" src="<%= image_path 'logo_fixed.svg' %>" alt="logo">
-                  </a>
-                </div>
-                <div class="header__mobile-menu-trigger">
-                  <button class="mobile-menu-trigger">
-                    <svg class="icon icon_hamburger">
-                      <use xlink:href="<%= image_path 'icons.svg#hamburger' %>"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </header>
-        </div>
-        <div class="page__main">
-          <section class="section">
-            <div class="top-image">
-              <img src="<%= image_path 'content/top-image/1.jpg' %>" alt="top-image">
-              <div class="top-image__mask">
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <div class="about-section">
-              <img class="about-section__image" src="<%= image_path 'content/about-section/1.jpg' %>" alt="about-image">
-              <div class="about-section__button">
-                <a class="button button_style_ghost button_color_white button_style_wide" href="#">Узнать о нас</a>
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <div class="fixed-bg-section fixed-bg-section_big"></div>
-          </section>
-          <section class="section">
-            <div class="photographers-section">
-              <a class="videograph-section__link" href="#"></a>
-              <div class="photographers-section__blackout">
-                <span class="vertical-helper"></span>
-                <h2 class="photographers-section__title">Фотографы</h2>
-              </div>
-              <div class="photographers-section__item">
-                <a class="photographers-section__mask" href="#"></a>
-                <img class="photographers-section__image" src="<%= image_path 'content/photographers/1.jpg' %>" alt="photo">
-              </div>
-              <div class="photographers-section__item">
-                <a class="photographers-section__mask" href="#"></a>
-                <img class="photographers-section__image" src="<%= image_path 'content/photographers/2.jpg' %>" alt="photo">
-              </div>
-              <div class="photographers-section__item">
-                <a class="photographers-section__mask" href="#"></a>
-                <img class="photographers-section__image" src="<%= image_path 'content/photographers/3.jpg' %>" alt="photo">
-              </div>
-              <div class="photographers-section__item">
-                <a class="photographers-section__mask" href="#"></a>
-                <img class="photographers-section__image" src="<%= image_path 'content/photographers/4.jpg' %>" alt="photo">
-              </div>
-              <div class="photographers-section__item">
-                <a class="photographers-section__mask" href="#"></a>
-                <img class="photographers-section__image" src="<%= image_path 'content/photographers/5.jpg' %>" alt="photo">
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <div class="fixed-bg-section fixed-bg-section_small"></div>
-          </section>
-          <section class="section">
-            <div class="videograph-section">
-              <a class="videograph-section__link" href="#"></a>
-              <div class="videograph-section__blackout">
-                <span class="vertical-helper"></span>
-                <h2 class="photographers-section__title">Видеографы</h2>
-              </div>
-              <div class="videograph-section__item">
-                <a class="videograph-section__mask" href="#">
-                  <span class="vertical-helper"></span>
-                  <span class="videograph-section__text">
-                    <span class="videograph-section__name">Евгений Заточкин</span>
-                    <span class="videograph-section__pos">Видеограф</span>
-                  </span>
-                </a>
-                <img class="videograph-section__image" src="<%= image_path 'content/videographs/1.jpg' %>" alt="photo">
-              </div>
-              <div class="videograph-section__item">
-                <a class="videograph-section__mask" href="#">
-                  <span class="vertical-helper"></span>
-                  <span class="videograph-section__text">
-                    <span class="videograph-section__name">Евгений Заточкин</span>
-                    <span class="videograph-section__pos">Видеограф</span>
-                  </span>
-                </a>
-                <img class="videograph-section__image" src="<%= image_path 'content/videographs/2.jpg' %>" alt="photo">
-              </div>
-              <div class="videograph-section__item">
-                <a class="videograph-section__mask" href="#">
-                  <span class="vertical-helper"></span>
-                  <span class="videograph-section__text">
-                    <span class="videograph-section__name">Евгений Заточкин</span>
-                    <span class="videograph-section__pos">Видеограф</span>
-                  </span>
-                </a>
-                <img class="videograph-section__image" src="<%= image_path 'content/videographs/3.jpg' %>" alt="photo">
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="page__buffer"></div>
+  <!--[if lt IE 8]>
+  <p class="browsehappy">Вы используете<strong>устаревший</strong> браузер. Пожалуйста<a href="http://browsehappy.com" target="_blank">обновите браузер</a> для лучшего отображения сайта.</p><![endif]-->
+  <div class="page__mobile-menu">
+    <div class="mobile-menu js-link-sroll">
+      <div class="mobile-menu__close">
+        <svg class="icon icon_close">
+          <use xlink:href="images/icons.svg#close"></use>
+        </svg>
       </div>
-      <div class="page__cover"></div>
-      <div class="page__footer">
-        <footer class="footer">
-          <div class="footer-social">
-            <a class="footer-social__item" href="#">Facebook</a>
-            <a class="footer-social__item" href="#">Instagram</a>
-            <a class="footer-social__item" href="#">Pinterest</a>
-            <a class="footer-social__item" href="#">Twitter</a>
+      <div class="clear"></div>
+      <span class="vertical-helper"></span>
+      <nav class="mobile-menu__menu">
+        <ul>
+          <li class="mobile-menu__item mobile-menu__item_active">
+            <a class="mobile-menu__link" href="undefined">Главная</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="undefined">О нас</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="undefined">Фото</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="undefined">Видео</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="undefined">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__social">
+        <div class="social-icons">
+          <div class="social-icons__list">
+            <ul>
+              <li class="social-icons__item social-icons__item_fb">
+                <a href="#">
+                  <svg class="icon icon_facebook">
+                    <use xlink:href="images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item social-icons__item_inst">
+                <a href="#">
+                  <svg class="icon icon_instagram">
+                    <use xlink:href="images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item social-icons__item_pint">
+                <a href="#">
+                  <svg class="icon icon_pinterest">
+                    <use xlink:href="images/icons.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icons__item social-icons__item_tw">
+                <a href="#">
+                  <svg class="icon icon_twitter">
+                    <use xlink:href="images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-        </footer>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="page__content">
+    <div class="page__wrapper">
+      <div class="page__header">
+        <header class="header">
+          <div class="header__top">
+            <div class="header__inner">
+              <div class="header__logo">
+                <a class="logo" href="index.html">
+                  <img class="logo__normal" src="images/logo.svg" alt="logo">
+                  <img class="logo__black" src="images/logo_fixed.svg" alt="logo">
+                </a>
+              </div>
+              <div class="header__mobile-menu-trigger">
+                <button class="mobile-menu-trigger">
+                  <svg class="icon icon_hamburger">
+                    <use xlink:href="images/icons.svg#hamburger"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="page__main">
+        <section class="section">
+          <div class="top-image">
+            <img src="images/content/top-image/1.jpg" alt="top-image">
+            <div class="top-image__mask">
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="about-section">
+            <img class="about-section__image" src="images/content/about-section/1.jpg" alt="about-image">
+            <div class="about-section__button">
+              <a class="button button_style_ghost button_color_white button_style_wide" href="#">Узнать о нас</a>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="fixed-bg-section fixed-bg-section_big"></div>
+        </section>
+        <section class="section">
+          <div class="photographers-section">
+            <a class="videograph-section__link" href="#"></a>
+            <div class="photographers-section__blackout">
+              <span class="vertical-helper"></span>
+              <h2 class="photographers-section__title">Фотографы</h2>
+            </div>
+            <div class="photographers-section__item">
+              <a class="photographers-section__mask" href="#"></a>
+              <img class="photographers-section__image" src="images/content/photographers/1.jpg" alt="photo">
+            </div>
+            <div class="photographers-section__item">
+              <a class="photographers-section__mask" href="#"></a>
+              <img class="photographers-section__image" src="images/content/photographers/2.jpg" alt="photo">
+            </div>
+            <div class="photographers-section__item">
+              <a class="photographers-section__mask" href="#"></a>
+              <img class="photographers-section__image" src="images/content/photographers/3.jpg" alt="photo">
+            </div>
+            <div class="photographers-section__item">
+              <a class="photographers-section__mask" href="#"></a>
+              <img class="photographers-section__image" src="images/content/photographers/4.jpg" alt="photo">
+            </div>
+            <div class="photographers-section__item">
+              <a class="photographers-section__mask" href="#"></a>
+              <img class="photographers-section__image" src="images/content/photographers/5.jpg" alt="photo">
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="fixed-bg-section fixed-bg-section_small"></div>
+        </section>
+        <section class="section">
+          <div class="videograph-section">
+            <a class="videograph-section__link" href="#"></a>
+            <div class="videograph-section__blackout">
+              <span class="vertical-helper"></span>
+              <h2 class="photographers-section__title">Видеографы</h2>
+            </div>
+            <div class="videograph-section__item">
+              <a class="videograph-section__mask" href="#">
+                <span class="vertical-helper"></span>
+                <span class="videograph-section__text">
+                  <span class="videograph-section__name">Евгений Заточкин</span>
+                  <span class="videograph-section__pos">Видеограф</span>
+                </span>
+              </a>
+              <img class="videograph-section__image" src="images/content/videographs/1.jpg" alt="photo">
+            </div>
+            <div class="videograph-section__item">
+              <a class="videograph-section__mask" href="#">
+                <span class="vertical-helper"></span>
+                <span class="videograph-section__text">
+                  <span class="videograph-section__name">Евгений Заточкин</span>
+                  <span class="videograph-section__pos">Видеограф</span>
+                </span>
+              </a>
+              <img class="videograph-section__image" src="images/content/videographs/2.jpg" alt="photo">
+            </div>
+            <div class="videograph-section__item">
+              <a class="videograph-section__mask" href="#">
+                <span class="vertical-helper"></span>
+                <span class="videograph-section__text">
+                  <span class="videograph-section__name">Евгений Заточкин</span>
+                  <span class="videograph-section__pos">Видеограф</span>
+                </span>
+              </a>
+              <img class="videograph-section__image" src="images/content/videographs/3.jpg" alt="photo">
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="page__buffer"></div>
+    </div>
+    <div class="page__cover"></div>
+    <div class="page__footer">
+      <footer class="footer">
+        <div class="footer-social">
+          <a class="footer-social__item" href="#">Facebook</a>
+          <a class="footer-social__item" href="#">Instagram</a>
+          <a class="footer-social__item" href="#">Pinterest</a>
+          <a class="footer-social__item" href="#">Twitter</a>
+        </div>
+      </footer>
+    </div>
+  </div>

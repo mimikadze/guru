@@ -18,13 +18,13 @@ $(document).ready(function() {
 	$(function(){
 		if (document.documentElement.clientWidth > 800) {
 			$('.fixed-bg-section_big').parallax({
-				imageSrc: 'assets/content/fixed-bg/1.jpg',
+				imageSrc: 'images/content/fixed-bg/1.jpg',
 				bleed: 35,
 				zIndex: 1
 			});
 	
 			$('.fixed-bg-section_small').parallax({
-				imageSrc: 'assets/content/fixed-bg/2.jpg',
+				imageSrc: 'images/content/fixed-bg/2.jpg',
 				bleed: 35,
 				zIndex: 1
 			});
