@@ -21,7 +21,7 @@ test:
   database: guru_test
 
 production:
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
-  database: db/production.sqlite3
+  database: guru
