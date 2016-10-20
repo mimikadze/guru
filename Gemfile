@@ -16,6 +16,8 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem 'mini_magick'
 
+gem 'listen', '~> 3.0.5' #убрать его потом
+
 group :development, :test do
    gem 'pry-byebug'
    gem 'capistrano',                 require: false
