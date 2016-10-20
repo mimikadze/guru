@@ -21,5 +21,7 @@ test:
   database: guru_test
 
 production:
-  <<: *default
-  database: guru_production
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+  database: db/production.sqlite3
