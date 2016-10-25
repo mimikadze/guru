@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160923085101) do
+ActiveRecord::Schema.define(version: 20161020131459) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,8 +69,9 @@ ActiveRecord::Schema.define(version: 20160923085101) do
     t.string   "instagramm"
     t.boolean  "is_videograph"
     t.text     "promotional_text"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "photographer_cover"
   end
 
   create_table "utility_photos", force: :cascade do |t|

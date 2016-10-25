@@ -25,3 +25,9 @@ production:
   pool: 5
   timeout: 5000
   database: guru
+
+staging:
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: guru

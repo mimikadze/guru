@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/about' => 'pages#about'
   get '/contacts' => 'pages#contacts'
+  get '/photographers' => 'pages#photographers'
+  get '/videographers' => 'pages#videographers'
 
 end
