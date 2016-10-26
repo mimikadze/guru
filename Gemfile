@@ -26,6 +26,7 @@ group :development, :test do
    gem 'capistrano-bundler',         require: false
    gem 'capistrano3-puma',           require: false
    gem 'capistrano-rails-console',   require: false
+   gem 'ffaker'
 end
 
 group :development do

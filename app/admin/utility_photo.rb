@@ -1,9 +1,10 @@
 ActiveAdmin.register UtilityPhoto do
+  menu label: 'Служебные Фотки'
   permit_params :service_photo, :location
 
   form do |f|
     f.inputs do
-      f.input :service_photo
+      f.input :service_photo, label: "Картинка"
       f.input :location, as: :select, collection:  [
                                                     ["Главная - первая",  "main-first"  ],
                                                     ["Главная - команда", "main-team"   ],
@@ -18,8 +19,10 @@ ActiveAdmin.register UtilityPhoto do
 
   show do
     attributes_table do
-      row :location
-      row "Image" do
+      row "Область сайта" do
+        resource.location
+      end
+      row "Картинка" do
           image_tag resource.service_photo.thumb.url
       end
     end
@@ -28,10 +31,10 @@ ActiveAdmin.register UtilityPhoto do
 
   index do
     selectable_column
-    column "Image" do |item|
+    column "Картинка" do |item|
       image_tag item.service_photo.thumb.url
     end
-    column :location
+    column "Область сайта", :location
     actions
   end
 end
